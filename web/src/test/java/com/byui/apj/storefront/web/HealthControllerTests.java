@@ -17,7 +17,7 @@ public class HealthControllerTests {
     public void getHealth() throws Exception {
         ResponseEntity<String> response = template.getForEntity("/health", String.class);
         assertThat(response.getBody()).isEqualTo("200 OK");
-        //assertThat(response.getStatusCode().value()).isEqualTo(200);
+        assertThat(response.getStatusCode().value()).isEqualTo(200);
     }
 
 }
