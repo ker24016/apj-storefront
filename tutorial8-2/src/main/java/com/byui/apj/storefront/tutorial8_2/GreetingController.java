@@ -1,4 +1,4 @@
-package com.byui.apj.storefront.tutorial82;
+package com.byui.apj.storefront.tutorial8_2;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
