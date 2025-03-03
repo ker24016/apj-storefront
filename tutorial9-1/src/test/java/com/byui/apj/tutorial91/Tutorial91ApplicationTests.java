@@ -1,4 +1,4 @@
-package com.byui.apj.storefront.tutorial91;
+package com.byui.apj.tutorial91;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
