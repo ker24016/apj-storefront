@@ -1,4 +1,4 @@
-package com.byui.apj.storefront.tutorial92;
+package com.byui.apj.tutorial92;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
