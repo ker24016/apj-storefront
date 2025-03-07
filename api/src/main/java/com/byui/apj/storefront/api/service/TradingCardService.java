@@ -55,7 +55,7 @@ public class TradingCardService {
     }
 
     public List<TradingCard> getAllCards(int page, int size) {
-        int start = page * size;
+        int start = Math.min(page * size, this.cards.size());
         int end = Math.min(start + size, this.cards.size());
         return cards.subList(start, end);
     }
