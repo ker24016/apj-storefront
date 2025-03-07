@@ -23,17 +23,17 @@ public class TradingCardService {
     public TradingCardService() {
         this.cards = new ArrayList<>();
         try {
-            ClassPathResource resource = new ClassPathResource("animals.csv");
+            ClassPathResource resource = new ClassPathResource("pioneers.csv");
             Reader reader = new InputStreamReader(resource.getInputStream());
             Iterable<CSVRecord> records = CSVFormat.DEFAULT.withFirstRecordAsHeader().parse(reader);
 
             for (CSVRecord record : records) {
-                Long id = Long.parseLong(record.get("id"));
-                String name = record.get("name");
-                String specialty = record.get("specialty");
-                String contribution = record.get("contribution");
-                BigDecimal price = new BigDecimal(record.get("price"));
-                String imageUrl = record.get("imageUrl");
+                Long id = Long.parseLong(record.get("ID"));
+                String name = record.get("Name");
+                String specialty = record.get("Specialty");
+                String contribution = record.get("Contribution");
+                BigDecimal price = new BigDecimal(record.get("Price"));
+                String imageUrl = record.get("ImageUrl");
                 cards.add(new TradingCard(id, name, specialty, contribution, price, imageUrl));
             }
         } catch (IOException e) {
