@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController @RequestMapping("/animals")
+@RestController
+@RequestMapping("/animals")
 public class AnimalController {
     @Autowired
     private AnimalService animalService;
