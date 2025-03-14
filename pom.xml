@@ -17,6 +17,7 @@
         <module>web</module>
         <module>api</module>
         <module>tutorial10-1</module>
+        <module>api-mongo</module>
     </modules>
 
     <properties>
