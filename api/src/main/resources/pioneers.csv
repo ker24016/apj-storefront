@@ -1,4 +1,4 @@
-ID,Name,Specialty,Contribution,Price,ImageUrl
+id,name,specialty,contribution,price,imageUrl
 1,Alan Turing,Algorithms_Theory,"Developed the concept of the Turing machine, laying the foundation for theoretical computer science.",67.99,https://placecats.com/200/280
 2,Ada Lovelace,Algorithms_Theory,"Wrote the first algorithm intended for implementation on Charles Babbage's Analytical Engine, becoming the first computer programmer.",75.99,https://placecats.com/200/280
 3,John von Neumann,Computer Architecture,Designed the von Neumann architecture that forms the basis of most modern computer systems.,11.99,https://placecats.com/200/280
