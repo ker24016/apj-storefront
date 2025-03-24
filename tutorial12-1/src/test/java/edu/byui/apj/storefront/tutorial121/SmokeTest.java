@@ -6,11 +6,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest
-class Tutorial121ApplicationTests {
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+public class SmokeTest {
+    @Autowired
+    private HomeController controller;
 
     @Test
-    void contextLoads() {
+    void contextLoads() throws Exception {
+        assertThat(controller).isNotNull();
     }
-
 }
